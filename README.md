@@ -1,6 +1,6 @@
 # Homebrew Tap
 
-Homebrew formulae for tools by [@dacharyc](https://github.com/dacharyc).
+Homebrew formulae for tools by [@agent-ecosystem](https://github.com/agent-ecosystem).
 
 ## Install
 
