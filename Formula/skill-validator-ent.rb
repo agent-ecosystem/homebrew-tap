@@ -5,21 +5,21 @@
 class SkillValidatorEnt < Formula
   desc "Enterprise CLI for validating and scoring Agent Skill packages via AWS Bedrock"
   homepage "https://github.com/agent-ecosystem/skill-validator-ent"
-  version "1.0.0"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agent-ecosystem/skill-validator-ent/releases/download/v1.0.0/skill-validator-ent_1.0.0_darwin_amd64.tar.gz"
-      sha256 "PLACEHOLDER"
+      url "https://github.com/agent-ecosystem/skill-validator-ent/releases/download/v0.1.0/skill-validator-ent_0.1.0_darwin_amd64.tar.gz"
+      sha256 "054b714929f0292f5086c57c90c47e41f4dc26bddbfe2c57e5614d19b2021590"
 
       define_method(:install) do
         bin.install "skill-validator-ent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agent-ecosystem/skill-validator-ent/releases/download/v1.0.0/skill-validator-ent_1.0.0_darwin_arm64.tar.gz"
-      sha256 "PLACEHOLDER"
+      url "https://github.com/agent-ecosystem/skill-validator-ent/releases/download/v0.1.0/skill-validator-ent_0.1.0_darwin_arm64.tar.gz"
+      sha256 "a7a121512a0bb8ea70905dbb350d2ffc4030403735d98ae6a00e23aa8e893e39"
 
       define_method(:install) do
         bin.install "skill-validator-ent"
@@ -29,15 +29,15 @@ class SkillValidatorEnt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-ecosystem/skill-validator-ent/releases/download/v1.0.0/skill-validator-ent_1.0.0_linux_amd64.tar.gz"
-      sha256 "PLACEHOLDER"
+      url "https://github.com/agent-ecosystem/skill-validator-ent/releases/download/v0.1.0/skill-validator-ent_0.1.0_linux_amd64.tar.gz"
+      sha256 "65a84968c0c4e4d63b50ff47ccfdcfa97089b02c835b47afb64e2f6d0cf8d47a"
       define_method(:install) do
         bin.install "skill-validator-ent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-ecosystem/skill-validator-ent/releases/download/v1.0.0/skill-validator-ent_1.0.0_linux_arm64.tar.gz"
-      sha256 "PLACEHOLDER"
+      url "https://github.com/agent-ecosystem/skill-validator-ent/releases/download/v0.1.0/skill-validator-ent_0.1.0_linux_arm64.tar.gz"
+      sha256 "ed9ec585cc71f64f56af3546aad7a96f953172ff3aa02adeb6e925dd8ecc3c7f"
       define_method(:install) do
         bin.install "skill-validator-ent"
       end
