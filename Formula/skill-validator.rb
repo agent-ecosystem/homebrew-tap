@@ -5,21 +5,21 @@
 class SkillValidator < Formula
   desc "CLI tool that validates and scores Agent Skill packages"
   homepage "https://github.com/agent-ecosystem/skill-validator"
-  version "1.2.1"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agent-ecosystem/skill-validator/releases/download/v1.2.1/skill-validator_1.2.1_darwin_amd64.tar.gz"
-      sha256 "be7c3a7e9c670686a54686e00b11d1282b346b06a15116449bb380871b1d3b5c"
+      url "https://github.com/agent-ecosystem/skill-validator/releases/download/v1.3.0/skill-validator_1.3.0_darwin_amd64.tar.gz"
+      sha256 "705bc2c3cac2f0950ff62b128aec07437e7ce5311363c7213eac19ceac9b0d33"
 
       define_method(:install) do
         bin.install "skill-validator"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agent-ecosystem/skill-validator/releases/download/v1.2.1/skill-validator_1.2.1_darwin_arm64.tar.gz"
-      sha256 "9beabf006b8e1da43cdeff68c6ee0df696da716dc258f7a6c3db5846609dd9a4"
+      url "https://github.com/agent-ecosystem/skill-validator/releases/download/v1.3.0/skill-validator_1.3.0_darwin_arm64.tar.gz"
+      sha256 "81a770be77079737d15b2d7b281de6b5eced1d7a6abc23760dc1d9e099fb4493"
 
       define_method(:install) do
         bin.install "skill-validator"
@@ -29,15 +29,15 @@ class SkillValidator < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-ecosystem/skill-validator/releases/download/v1.2.1/skill-validator_1.2.1_linux_amd64.tar.gz"
-      sha256 "18649e5e2837346e87cb410efd2718e8b9cd3d8e3841893133852bdb191776ca"
+      url "https://github.com/agent-ecosystem/skill-validator/releases/download/v1.3.0/skill-validator_1.3.0_linux_amd64.tar.gz"
+      sha256 "a71a9cbd2c5ba286056cb450c0ce0a3544b6e5face61bd56ad60fc73a713b807"
       define_method(:install) do
         bin.install "skill-validator"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-ecosystem/skill-validator/releases/download/v1.2.1/skill-validator_1.2.1_linux_arm64.tar.gz"
-      sha256 "933d1345b98b343bfdd4d4571a5feb9d6f262b2408299139d1f0e96202ae27de"
+      url "https://github.com/agent-ecosystem/skill-validator/releases/download/v1.3.0/skill-validator_1.3.0_linux_arm64.tar.gz"
+      sha256 "35078aa36f4f9b8fe6dd491f22f99698230a566f6cbc40311f85a8246a42c9cf"
       define_method(:install) do
         bin.install "skill-validator"
       end
