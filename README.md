@@ -12,10 +12,12 @@ brew tap agent-ecosystem/tap
 
 | Formula | Description |
 |---------|-------------|
+| [agentminutes](https://github.com/agent-ecosystem/agentminutes) | Parse agent harness session logs (Antigravity CLI, Claude Code, Codex CLI) into a unified event schema |
+| [agentsummons](https://github.com/agent-ecosystem/agentsummons) | Invoke agent harnesses (Antigravity CLI, Claude Code, Codex CLI) headlessly |
 | [skill-validator](https://github.com/agent-ecosystem/skill-validator) | CLI tool that validates and scores Agent Skill packages |
-| [skill-validator-ent](https://github.com/agent-ecosystem/skill-validator-ent) | Enterprise CLI for validating and scoring Agent Skill packages via AWS Bedrock |
 
 ```bash
+brew install agent-ecosystem/tap/agentminutes
+brew install agent-ecosystem/tap/agentsummons
 brew install agent-ecosystem/tap/skill-validator
-brew install agent-ecosystem/tap/skill-validator-ent
 ```
