@@ -5,21 +5,21 @@
 class Agentsummons < Formula
   desc "Invoke agent harnesses (Antigravity CLI, Claude Code, Codex CLI) headlessly"
   homepage "https://github.com/agent-ecosystem/agentsummons"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agent-ecosystem/agentsummons/releases/download/v0.2.0/agentsummons_0.2.0_darwin_amd64.tar.gz"
-      sha256 "e6c3f853e87569f45aeecf8b917310ff4a349915759eb82233031d9b1f820749"
+      url "https://github.com/agent-ecosystem/agentsummons/releases/download/v0.2.1/agentsummons_0.2.1_darwin_amd64.tar.gz"
+      sha256 "fca5b2482a808d58b4e6a70a822de0dc94aa6cf379477473b185bbd0e65f3dc5"
 
       define_method(:install) do
         bin.install "agentsummons"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agent-ecosystem/agentsummons/releases/download/v0.2.0/agentsummons_0.2.0_darwin_arm64.tar.gz"
-      sha256 "3e9b4934696ec8cffa2558a70b780380606e1f55706bf28af8d1d892849b14fe"
+      url "https://github.com/agent-ecosystem/agentsummons/releases/download/v0.2.1/agentsummons_0.2.1_darwin_arm64.tar.gz"
+      sha256 "7df55952e34bb9ecbc9ba40f8819ba8ddf5ba9ddad0e25f0f38302677a58164d"
 
       define_method(:install) do
         bin.install "agentsummons"
@@ -29,15 +29,15 @@ class Agentsummons < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-ecosystem/agentsummons/releases/download/v0.2.0/agentsummons_0.2.0_linux_amd64.tar.gz"
-      sha256 "c22115fd0bf1d5daac580b716e54db5043875b84ab58977e379deffdb1a6fb19"
+      url "https://github.com/agent-ecosystem/agentsummons/releases/download/v0.2.1/agentsummons_0.2.1_linux_amd64.tar.gz"
+      sha256 "bd74560d2417891166cc99af9d369ae7863c4ab3f084c27f61bbc3a10d56dfa5"
       define_method(:install) do
         bin.install "agentsummons"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-ecosystem/agentsummons/releases/download/v0.2.0/agentsummons_0.2.0_linux_arm64.tar.gz"
-      sha256 "becf71bdac47b2ff922545beb2a6364fcf8cd563da9b0d504f13aa1381186ab1"
+      url "https://github.com/agent-ecosystem/agentsummons/releases/download/v0.2.1/agentsummons_0.2.1_linux_arm64.tar.gz"
+      sha256 "69f08cfbd53f30341f5e93c10295446af09b99ebea3c889e8184661dadc8a617"
       define_method(:install) do
         bin.install "agentsummons"
       end
