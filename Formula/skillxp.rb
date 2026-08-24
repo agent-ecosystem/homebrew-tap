@@ -5,21 +5,21 @@
 class Skillxp < Formula
   desc "Observe how agent harnesses load and activate Agent Skills, with transcript evidence"
   homepage "https://github.com/agent-ecosystem/skillxp"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agent-ecosystem/skillxp/releases/download/v0.1.1/skillxp_0.1.1_darwin_amd64.tar.gz"
-      sha256 "8d4079f94c870d3894b2740797251a1064c5f2cfedfc974bb8c0e1570531df98"
+      url "https://github.com/agent-ecosystem/skillxp/releases/download/v0.1.2/skillxp_0.1.2_darwin_amd64.tar.gz"
+      sha256 "90e8e4024e0fb17608c9cd09576c9bde3c790f36617271949a3b69171392837d"
 
       define_method(:install) do
         bin.install "skillxp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agent-ecosystem/skillxp/releases/download/v0.1.1/skillxp_0.1.1_darwin_arm64.tar.gz"
-      sha256 "e9d6e0e05bedfa93e1e69cc1330e62ac7b0381c564542d0f2e5fd86e10442590"
+      url "https://github.com/agent-ecosystem/skillxp/releases/download/v0.1.2/skillxp_0.1.2_darwin_arm64.tar.gz"
+      sha256 "babe527325eb182f12a147cb1f92650a7d7af7767b00451c19e22a9665d567a3"
 
       define_method(:install) do
         bin.install "skillxp"
@@ -29,15 +29,15 @@ class Skillxp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-ecosystem/skillxp/releases/download/v0.1.1/skillxp_0.1.1_linux_amd64.tar.gz"
-      sha256 "b323c055ba3aff29d6a8c80c6063399f5bbfe95d5f806929c9d350604db59ead"
+      url "https://github.com/agent-ecosystem/skillxp/releases/download/v0.1.2/skillxp_0.1.2_linux_amd64.tar.gz"
+      sha256 "3560e06bab16892d5360285ab0f82e8d118170452d05c1bbb490e214016f364b"
       define_method(:install) do
         bin.install "skillxp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-ecosystem/skillxp/releases/download/v0.1.1/skillxp_0.1.1_linux_arm64.tar.gz"
-      sha256 "435f57999d3e41f8866d863e1c6f5f8d62e664a180e24ca131b8ff0cefc5ba0c"
+      url "https://github.com/agent-ecosystem/skillxp/releases/download/v0.1.2/skillxp_0.1.2_linux_arm64.tar.gz"
+      sha256 "cf0e6981011da602b5d6aa0b6db99985dd38638eed1a94f8f3fe1b9f7f8e72d9"
       define_method(:install) do
         bin.install "skillxp"
       end
