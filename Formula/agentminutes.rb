@@ -5,21 +5,21 @@
 class Agentminutes < Formula
   desc "Parse agent harness session logs (Antigravity CLI, Claude Code, Codex CLI, GitHub Copilot CLI) into a unified event schema"
   homepage "https://github.com/agent-ecosystem/agentminutes"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agent-ecosystem/agentminutes/releases/download/v0.7.0/agentminutes_0.7.0_darwin_amd64.tar.gz"
-      sha256 "142f6862e561d73461f62e9bc6e4917db2176e217a9ada5b9b9d5eb2f3b829cd"
+      url "https://github.com/agent-ecosystem/agentminutes/releases/download/v0.8.0/agentminutes_0.8.0_darwin_amd64.tar.gz"
+      sha256 "02d6b0cee494d176261466213232ff015e86e31125101f8010f14bd0833bb6ec"
 
       define_method(:install) do
         bin.install "agentminutes"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agent-ecosystem/agentminutes/releases/download/v0.7.0/agentminutes_0.7.0_darwin_arm64.tar.gz"
-      sha256 "2430ca98e5dbf80eaefe5d90db895a58909737aba15424b8ea416edcf44e6ea9"
+      url "https://github.com/agent-ecosystem/agentminutes/releases/download/v0.8.0/agentminutes_0.8.0_darwin_arm64.tar.gz"
+      sha256 "95d19808638375da7253dad4c2441491ee042c42681fced763f915763610fdd2"
 
       define_method(:install) do
         bin.install "agentminutes"
@@ -29,15 +29,15 @@ class Agentminutes < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-ecosystem/agentminutes/releases/download/v0.7.0/agentminutes_0.7.0_linux_amd64.tar.gz"
-      sha256 "fddbf63610b2f551ed233ebbf97f978dd1eb805ba5f1373541772d136c82a9e0"
+      url "https://github.com/agent-ecosystem/agentminutes/releases/download/v0.8.0/agentminutes_0.8.0_linux_amd64.tar.gz"
+      sha256 "ec8cb2fd2ecd66362d939549624dbafa8b7bdbd57a1581ebb7d537ca95d52f18"
       define_method(:install) do
         bin.install "agentminutes"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-ecosystem/agentminutes/releases/download/v0.7.0/agentminutes_0.7.0_linux_arm64.tar.gz"
-      sha256 "ea749e63bc5b06a92de13630427ca5a255ebe2b96f6e521a4cb6b698116c13e1"
+      url "https://github.com/agent-ecosystem/agentminutes/releases/download/v0.8.0/agentminutes_0.8.0_linux_arm64.tar.gz"
+      sha256 "0a4992ce0839ee194a0fa0f8ccdee252f207558f7b0fc8fef85281a85fb0b2a8"
       define_method(:install) do
         bin.install "agentminutes"
       end
